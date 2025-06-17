@@ -22,6 +22,14 @@ public class Bitboard {
         bitboard &= ~(1L << pos);
     }
 
+    public void clearBoard() {
+        bitboard = 0L;
+    }
+
+    public boolean isBitSet(int pos) {
+        return (bitboard & (1L << pos)) != 0;
+    }
+
     public static final long DIAG_AH = -9205322385119247871L; // 0b1000000001000000001000000001000000001000000001000000001000000001 
     public static final long DIAG_HA = 72624976668147840L; // 0b0000000100000010000001000000100000010000001000000100000010000000
     public static final long FILE_A = -9187201950435737472L; // 0x8080808080808080L

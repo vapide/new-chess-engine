@@ -300,4 +300,30 @@ public class Chessboard {
 
         System.out.println();
     }
+
+    public String getFEN() {
+        return FEN.getFENFromBoard(this);
+    }
+
+    public String castlingRights() {
+        StringBuilder rights = new StringBuilder();
+        if (!H8RookHasMoved) {
+            rights.append("K");
+        }
+        if (!H1RookHasMoved) {
+            rights.append("Q");
+        }
+        if (!blackKingHasMoves) {
+            rights.append("k");
+        }
+        if (!H8RookHasMoved) {
+            rights.append("q");
+        }
+        return rights.toString();
+    }
+
+    public int fullMoveCount() {
+        return (moves.size())/2;
+    }
+    
 }

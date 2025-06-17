@@ -36,5 +36,7 @@ public class Main {
         board.displayBoard();
         System.out.println(board.getMoves());
         
+        System.out.println("FEN: " + board.getFEN());
+
     }
 }
