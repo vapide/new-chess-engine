@@ -110,14 +110,6 @@ Currently supports:
 - Basic castling rights
 - Move counters
 
-## 🤝 Contributing
-
-Feel free to contribute to this project by:
-1. Implementing items from the to-do list
-2. Improving existing implementations
-3. Adding tests
-4. Improving documentation
-
 ## 📝 License
 
 This project is licensed under the terms of the LICENSE file included in the repository.
